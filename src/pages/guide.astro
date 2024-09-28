@@ -1,0 +1,70 @@
+---
+import Layout from '/layouts/Layout.astro';
+import { Content } from '/components/guide.mdx';
+---
+
+<Layout title="Majeggstics Guide">
+	<main>
+		<Content />
+	</main>
+</Layout>
+
+<style is:global>
+	table {
+		border: 2px solid;
+		padding: 1em;
+	}
+	
+	thead {
+		text-align: left;
+	}
+	
+	thead, tbody {
+		line-height: 2.5;
+	}
+	
+	thead tr, tbody tr:nth-child(even) {
+		background-color: rgba(0,0,0,0.05);
+	}
+	
+	th, td {
+		padding: 0 1em;
+	}
+	
+	td.time {
+		text-align: right;
+	}
+	
+	.note {
+		font-size: smaller;
+	}
+	
+	.infobox {
+		background-color: rgba(0,0,0,0.1);
+		padding: 1em 3em;
+		border-left: 15px solid rgba(0,0,0,0.2);
+		margin: 2.25em 0;
+	}
+	
+	.alertbox {
+		background-color: rgba(255,21,0,0.2);
+		padding: 1em 3em;
+		border-left: 15px solid rgba(255,21,0,0.2);
+		margin: 2.25em 0;
+	}
+	
+	.advicebox {
+		background-color: rgba(61,255,61,0.2);
+		padding: 1em 3em;
+		border-left: 15px solid rgba(61,255,61,0.2);
+		margin: 2.25em 0;
+	}
+	
+	.token_icon {
+		background-image: url('images/B_token.png');
+		background-size: contain;
+		height: 1.2em;
+		width: 1.2em;
+		display: inline-block;
+	}
+</style>
